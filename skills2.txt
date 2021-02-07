@@ -1,1 +1,10 @@
-Banco de Dados
+Internet
+Unix
+Bash
+Git
+Git Hub
+Front
+Back
+Linkedin
+React
+Node.js
