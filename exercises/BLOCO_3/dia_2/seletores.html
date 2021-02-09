@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELETORES E PROPRIEDADE CSS</title>
+    <title>CSS</title>
     <style>
 
+        body {
+            background-color: lightgreen;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .text-style{
+            
+            font-family: monospace;
+            font-size: 1em;
+            color: indigo;
+            text-decoration:  underline;
+        }
+
+        h1 {
+
+            font-style: italic;
+        }
+
+        h2 {
+            font-weight:lighter;
+            line-height: 20px;
+        }
         
     </style>
 </head>
 <body>
-    
+    <h1>CSS SELETORES E PROPRIEDADES</h1>
+    <h2>Informações: Seletores</h2>
+    <p class="text-style">CSS tem sua propria terminologia para descrever a linguagem CSS. Anteriormente nesse tutorial, você criou linha no seu stylesheet como esta:</p>
+    <p class="text-style">No CSS, este código inteiro é uma regra. Esta regra inicia com strong, que é um seletor. Ele seleciona os elementos do DOM aos quais a regra se aplica.Mais detalhes. A parte dentro das chaves é a declaração. A palavra-chave color é uma propriedade e red é um valor.</p>
+    <h2>Seletores com Classe</h2>
+    <p class="text-style">Use o atributo class em um elemento para atribuir o elemento a uma determinada classe. O nome da classe é de sua escolha. Muitos elementos em um documento podem pertencer a mesma classe.</p>
+    <h2>Seletores com ID</h2>
+    <p class="text-style">Use o atributo id em um elemento para atribuir um ID a esse elemento. O nome do ID é de sua escolha e ele deve ser único no documento. Em seu CSS, digite cerquilha (#) antes do ID quanto estiver usando em um seletor ID.</p>
 </body>
 </html>
