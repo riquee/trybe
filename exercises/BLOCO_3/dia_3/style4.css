@@ -1,0 +1,52 @@
+div:hover{
+    border: 1px solid ;
+}
+div:nth-child(3){
+    background-color: blue;
+}
+
+div:nth-child(4){
+    background-color: crimson;
+}
+
+div:nth-child(5){
+    background-color: mediumorchid;
+    height: 50px;
+}
+
+div:nth-child(6){
+    background-color:orange;
+}
+
+div:nth-child(7){
+    background-color: cyan;
+}
+
+
+div:nth-child(3) h3:first-child {
+    color: white;
+}
+
+div:nth-child(4) h3:first-child {
+    color: black;
+}
+
+div:nth-child(5) h3:first-child {
+    color: hotpink;
+}
+
+div:nth-child(6) h3:first-child {
+    color: seagreen;
+}
+
+div:nth-child(7) h3:first-child {
+    color: lawngreen;
+}
+
+div:nth-child(7) h3:first-child {
+    color: lawngreen;
+}
+
+div:nth-child(2n+1){
+    font-style: italic;
+}
