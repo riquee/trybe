@@ -1,24 +1,10 @@
-    h1 {
+    h1,h3,ul{
         text-align: center;
     }
 
     li{
         list-style: none;
-    }
-
-    .positions li{
-        margin: auto;  
-
-    }
-
-    .positions div{
-        text-align: center;
-        
-    }
-
-    .positions div li{
         display: inline-block;
-
     }
 
     .first {
@@ -43,8 +29,4 @@
         height: 50px;
         text-align: center;
         width: 300px;
-    }
-
-    .info {
-        text-align: center;
     }
