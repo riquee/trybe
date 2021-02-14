@@ -1,0 +1,54 @@
+main {
+    padding: 0 20%;
+}
+
+main h1{
+    font-size: 40px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 10%;
+}
+
+main aside {
+    width: 30%;
+    float: right;
+}
+
+main section{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+main p{
+    line-height: 25px;
+}
+
+.info {
+    border: 1px solid;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.info thead th{
+    padding: 20px 0;
+}
+
+.info thead img{
+    width: 100%;
+}
+
+.info tbody td{
+    text-align: left;
+    padding-bottom: px;
+}
+
+.info tbody td:only-child{
+    text-align: center;
+}
+
+.info tbody td{
+    padding-left: 10px;
+}
