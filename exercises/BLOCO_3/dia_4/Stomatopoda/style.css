@@ -45,7 +45,6 @@ main p{
 }
 
 .info {
-    border: 1px solid;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -69,5 +68,14 @@ main p{
 
 .info tbody td{
     padding-left: 10px;
+}
+
+footer {
+    width: 70%;
+    text-align: center;
+    clear: both;
+    margin: auto;
+    background-color: rgb(136, 136, 230);
+    padding-bottom: 40px;
 }
 
