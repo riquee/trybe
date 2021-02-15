@@ -1,5 +1,7 @@
 main {
-    padding: 0 20%;
+    width: 70%;
+    background-color: orchid;
+    margin: auto;
 }
 
 main h1{
@@ -14,12 +16,18 @@ nav li{
 main aside {
     width: 30%;
     float: right;
+    background-color: lawngreen;
 }
 
-main section{
-    width: 50%;
+main article{
+    width: 70%;
     float: left;
     text-align: left;
+    background-color: orange;
+}
+
+main article h2,section{
+    padding: 0 20px;
 }
 
 main p{
@@ -28,10 +36,10 @@ main p{
 
 .info {
     border: 1px solid;
-    width: 220px;
     text-align: center;
     padding-bottom: 10px;
 }
+
 .info thead th{
     padding: 20px 0;
 }
@@ -41,8 +49,8 @@ main p{
 }
 
 .info tbody td{
+    
     text-align: left;
-    padding-bottom: px;
 }
 
 .info tbody td:only-child{
