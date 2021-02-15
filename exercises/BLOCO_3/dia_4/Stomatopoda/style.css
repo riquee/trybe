@@ -4,6 +4,7 @@ main {
     margin: auto;
 }
 
+
 main h1{
     font-size: 40px;
 }
@@ -26,8 +27,17 @@ main article{
     background-color: orange;
 }
 
-main article h2,section{
+main article h2,section,ul{
     padding: 0 20px;
+}
+
+main article ul a{
+    color: rgb(248, 1, 1);
+}
+
+main article ul{
+    list-style: none;
+    padding: 0;
 }
 
 main p{
@@ -49,7 +59,7 @@ main p{
 }
 
 .info tbody td{
-    
+
     text-align: left;
 }
 
@@ -60,3 +70,4 @@ main p{
 .info tbody td{
     padding-left: 10px;
 }
+
