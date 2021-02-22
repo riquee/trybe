@@ -1,81 +1,56 @@
-main {
-    width: 70%;
-    background-color: orchid;
-    margin: auto;
-}
-
-
-main h1{
-    font-size: 40px;
-}
-
-nav li{
-    display: inline;
-    margin: 0 8%;
-}
-
-main aside {
-    width: 30%;
-    float: right;
-    background-color: lawngreen;
-}
-
-main article{
-    width: 70%;
-    float: left;
-    text-align: left;
-    background-color: orange;
-}
-
-main article h2,section,ul{
-    padding: 0 20px;
-}
-
-main article ul a{
-    color: rgb(248, 1, 1);
-}
-
-main article ul{
-    list-style: none;
+*{
+    margin: 0;
     padding: 0;
 }
 
-main p{
-    line-height: 25px;
-}
-
-.info {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.info thead th{
-    padding: 20px 0;
-}
-
-.info thead img{
-    width: 100%;
-}
-
-.info tbody td{
-
-    text-align: left;
-}
-
-.info tbody td:only-child{
-    text-align: center;
-}
-
-.info tbody td{
-    padding-left: 10px;
-}
-
-footer {
-    width: 70%;
-    text-align: center;
-    clear: both;
+body{
     margin: auto;
-    background-color: rgb(136, 136, 230);
-    padding-bottom: 40px;
+    width: 70%;
 }
 
+header{
+    height: 200px;
+    background-color: #CE4532;
+}
+
+header h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: #F8FCFF;
+}
+
+header ul{
+    margin-top: 36px;
+    background-color: #f17665;
+}
+
+header li{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border-right: 1px solid;
+}
+
+header li:hover{
+    background-color: #F8FCFF;
+}
+
+article{
+    background-color: #8CA2AF;
+    padding: 20px 20px;
+}
+
+article aside{
+    width: min-content;
+    float: right;
+    border: 1px solid;
+    margin: 20px;
+}
+
+article h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
