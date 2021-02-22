@@ -53,8 +53,8 @@ ul:last-of-type li:hover:nth-child(4) a:visited{
     font-weight: bold;
     color: yellow;
 }
-ul:last-of-type li:hover:nth-child(5) a:link,
-ul:last-of-type li:hover:nth-child(5) a:visited{
+ul:last-of-type li:nth-child(5) a:hover:link,
+ul:last-of-type li:nth-child(5) a:hover:visited{
     font-weight: bold;
     color: green;
 }
