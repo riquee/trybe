@@ -34,7 +34,7 @@ for(linha=1; linha <= n; linha++){
             
             string += ' '
         
-        /*---------------------------------------------------------------------- - SE NÃO, ADICIONA UM ASTERISCO NO POSICIONAMENTO QUE SEJA MAIOR OU IGUAL A VARIAVEL;
+        /*--------------------------------------------------------------------- - SE NÃO, ADICIONA UM ASTERISCO NO POSICIONAMENTO QUE SEJA MAIOR OU IGUAL A VARIAVEL;
         - EXEMPLO: indexLinha = 3; ELE CONCATENA ESPAÇO NAS POSIÇÕES 3,4 E 5
         ----------------------------------------------------------------------*/
         } else {
