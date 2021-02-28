@@ -1,15 +1,16 @@
 let n = 5;
 let string = "";
 let position_asterisc = n - 2;
+
 let maioresPosition = position_asterisc;
 let menorPosition = position_asterisc;
 
 for (line = 1; line <= n; line++) {
   if (line % 2 != 0) {
 
-    for (indexLine = 1; indexLine <= n; indexLine++) {
+    for (coluna = 1; coluna <= n; coluna++) {
 
-      if(menorPosition <= indexLine && maioresPosition >= indexLine){
+      if(menorPosition <= coluna && maioresPosition >= coluna){
 
         string += '*'
       } else {
