@@ -1,59 +1,31 @@
-let algarismosRomanos = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000,
-}
-
-function retornaNumero(n){
-
-    for(algarismo in algarismosRomanos){
-
-        if(n == algarismo){
-
-            return algarismosRomanos[algarismo];
-
-        }
-    }
-
-}
-
-
-function toAlgarismo(string){
-
-    if(retornaNumero(string)){
-
-        return console.log(retornaNumero(string))
-
+function add(numero1, numero2) {
+    let arrNumero1 = numero1.toString().split("").reverse();
+    let arrNumero2 = numero2.toString().split("").reverse();
+    let maiorArray, menorArray;
+    let arrSaida = [];
+  
+    if (arrNumero1.length > arrNumero2.length) {
+      maiorArray = arrNumero1;
+      menorArray = arrNumero2;
     } else {
-
-        let storage = 0
-
-        for(index=0; index<string.length; index++){
-
-            let n1 = retornaNumero(string[index])
-            let n2 = retornaNumero(string[index+1])
-
-            if(n1 < n2){
-                    
-                    storage = storage - n1
-                
-            } else  if ( n2 > n1){
-
-                storage = storage + n2
-                
-            } else {
-
-                storage = storage + n1
-            }
-        }
-        return console.log(storage)
+      maiorArray = arrNumero2;
+      menorArray = arrNumero1;
     }
-
-}
-
-toAlgarismo('XXXVIII')
-
+  
+    for (let i = 0; i < maiorArray.length; i++) {
+      if (menorArray[i] != undefined) {
+        arrSaida[i] = parseInt(menorArray[i]) + parseInt(maiorArray[i]);
+      } else {
+        arrSaida[i] = parseInt(maiorArray[i]);
+      }
+    }
+    let saida = parseInt(arrSaida.reverse().join(""));
+  
+    console.log(saida);
+    return saida;
+  }
+  
+  add(16, 18);
+  
+  // (2).toString()
+  // "teste".split
