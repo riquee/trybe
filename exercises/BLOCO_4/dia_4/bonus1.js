@@ -21,6 +21,7 @@ function retornaNumero(n){
 
 }
 
+
 function toAlgarismo(string){
 
     if(retornaNumero(string)){
@@ -30,33 +31,29 @@ function toAlgarismo(string){
     } else {
 
         let storage = 0
-        let swap;
 
         for(index=0; index<string.length; index++){
 
-
             let n1 = retornaNumero(string[index])
             let n2 = retornaNumero(string[index+1])
-            
-            if(n1 >= n2 || n2 == undefined){
+
+            if(n1 < n2){
+                    
+                    storage = storage - n1
+                
+            } else  if ( n2 > n1){
+
+                storage = storage + n2
+                
+            } else {
 
                 storage = storage + n1
-    
-            } else if(n1 < n2 || n2 == undefined) {
-    
-                if(storage == 0){
-
-                    storage = n1 - n2;
-                } else {
-
-                    storage = storage - n1
-                }
             }
-            
         }
-        console.log(storage)
+        return console.log(storage)
     }
+
 }
 
-toAlgarismo('LXIV')
+toAlgarismo('XXXVIII')
 
