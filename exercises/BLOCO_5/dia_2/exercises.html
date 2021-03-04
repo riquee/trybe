@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // CONSTRUTORES
+        let divCreator = document.createElement('div');
+        let divCreator2 = document.createElement('div');
+        let pCreator1 = document.createElement('p');
+        // SELETORES
+        let bodySeletor = document.querySelector('body');
+        let divMainSeletor = document.getElementsByClassName('.main-content');
+        // h1
+        let h1 = document.createElement('h1');
+        bodySeletor.appendChild(h1).innerText = 'Exercício 5.2 - JavaScript DOM';
+        // div class main-content
+        let divMain = divCreator;
+        bodySeletor.appendChild(divMain).className = 'main-content';
+        // div class center-content
+        let divContent = divCreator2;
+        document.querySelector('body div').appendChild(divContent).className = 'center-content'
+        divContent.style.backgroundColor = 'green';
+        //p 
+        let test = document.querySelector('.center-content');
+        let p1 = pCreator1;
+        test.appendChild(p1)
+        // div left
+        let divLeftcreator = document.createElement('div');
+        let divLeft = divLeftcreator;
+        test.appendChild(divLeft).className = 'left-content'
+        // div right
+        let divRightcreator = document.createElement('div');
+        let divRight = divRightcreator;
+        test.appendChild(divRight).className = 'right-content'
+        divRight.style.marginRight = 'auto'
+        // img
+        let targetLeft = document.querySelector('.left-content');
+        let img1c = document.createElement('img');
+        let img1 = img1c;
+        targetLeft.appendChild(img1).src = 'https://picsum.photos/200'.className = 'small-image';
+        // UL
+        let targetUl = document.querySelector('.right-content');
+        let ul1C = document.createElement('ul');
+        let ul1 = ul1C;
+        targetUl.appendChild(ul1)
+        for (index = 1; index <= 10; index++) {
+            select = document.querySelector('ul');
+            let creator = document.createElement('li');
+            let li = creator;
+            select.appendChild(li).innerText = `${index}`
+
+        }
+
+        for (index = 1; index <= 3; index++) {
+            select = document.querySelector('.main-content');
+            let creator = document.createElement('h3');
+            let li = creator;
+            select.appendChild(li)
+
+        }
+        let targetH3 = document.querySelectorAll('h3')
+        for(let h3 of targetH3) {
+            h3.className = 'description'
+        }
+
+        test.removeChild(divLeft)
+
+        let cont = 0;
+        let selectLi = document.querySelectorAll('li')
+        for (let div of selectLi) {
+            cont++
+            if(cont >= 9) div.parentNode.removeChild(div)
+            
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
