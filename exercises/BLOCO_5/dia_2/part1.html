@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+</head>
 
 <body>
     <div id="paiDoPai">
@@ -20,24 +21,17 @@
             <div id="quartoEUltimoFilho"></div>
         </div>
     </div>
-    </head>
+
 </body>
 <script>
-    document.querySelector('#elementoOndeVoceEsta').parentNode.style.backgroundColor = "red";
+    let seletor = document.querySelectorAll('div')
 
-    document.querySelector('#elementoOndeVoceEsta').firstElementChild.innerText = 'PRIMEIRO FILHO DO FILHO'
+    for (let div of seletor) {
+        if(div.id != 'pai' || div.id == 'elementoOndeVoceEsta' || div.id != 'primeiroFilhoDoFilho'){
+            div.parentNode.removeChild(div)
+        }
+    }
 
-    document.querySelector('#pai').firstElementChild.innerText = 'PRIMEIRO FILHO'
-
-    document.querySelector('#elementoOndeVoceEsta').firstElementChild.innerText = 'PRIMEIRO FILHO'
-
-    let elementPrincipal = document.querySelector('#elementoOndeVoceEsta');
-    let filhoDefilho = document.querySelector('#pai');
-    let primeiroFilhodoFilho = document.querySelector('#elementoOndeVoceEsta').firstElementChild;
-
-    elementPrincipal.appendChild(document.createElement('div'))
-    filhoDefilho.appendChild(document.createElement('div'))
-    primeiroFilhodoFilho.appendChild(document.createElement('div'))
 </script>
 
 </html>
