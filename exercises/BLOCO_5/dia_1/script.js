@@ -1,15 +1,33 @@
-let bodyColor = document.getElementById('container');
-bodyColor.style.backgroundColor = 'black'
-
-let class1 = document.querySelector('.emergency-tasks')
-class1.style.backgroundColor = '#FF54BD'
-
-let class2 = document.querySelector('.no-emergency-tasks')
-class2.style.backgroundColor = '#6CF5FA'
-
-let h3select = document.getElementsByTagName('h3');
-
-
-for (index = 0; index < h3select.length; index += 1) {
-    h3select[index].style.color = '#F9F752'
+function text(element, atributo) {
+  document.querySelector(element).innerHTML = atributo;
 }
+
+function quadrado(element, atributo) {
+    document.querySelector(element).style.backgroundColor = atributo;
+}
+
+function tudoGrande(element) {
+  element = document.querySelectorAll(element);
+  for(index = 0; index < element.length; index += 1) {
+    element[index].style.textTransform = "uppercase";
+  }
+}
+
+function exibaTudo(element) {
+  element = document.querySelectorAll(element);
+  for(index = 0; index < element.length; index += 1) {
+    console.log(element[index])
+  }
+}
+exibaTudo('p')
+tudoGrande('p')
+quadrado('.main-content', 'rgb(76,164,109)')
+quadrado('.center-content', 'white')
+text('h1', 'Exercício 5.1 - JavaScript')
+text('p', 'Lctus metus lorem nam cubilia aenean inceptos nibh sapien pretium bibendum blandit.')
+
+
+
+
+
+
