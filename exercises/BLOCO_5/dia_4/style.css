@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content-box {
+    border: 1px solid;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+
+
+
+.texts {
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+}
