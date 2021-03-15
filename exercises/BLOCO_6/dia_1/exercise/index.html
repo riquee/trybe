@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise BLOCO-6.1</title>
 </head>
+
 <body>
-    
+    <form action="" method="get">
+        <fieldset>
+            <label for="name">Nome
+                <input type="text" name="name" maxlength="40" required id="name">
+            </label>
+            <br>
+            <label for="email">Email
+                <input type="text" name="email" maxlength="50" required id="email">
+            </label>
+            <br>
+            <label for="cpf">CPF
+                <input type="text" name="cpf" maxlength="11" required id="cpf">
+            </label>
+            <br>
+            <label for="address">Endereço
+                <input type="text" name="address" maxlength="200" required id="address">
+            </label>
+            <br>
+            <label for="city">Cidade
+                <input type="text" name="city" maxlength="28" required id="city">
+            </label>
+            <br>
+            <label for="state">Estado
+                <select name="state" id="state" required></select>
+            </label>
+            <br>
+            <label for="house">Casa
+                <input type="radio" name="home" checked id="house" value="house">
+            </label>
+            <label for="apartment">Apartamento
+                <input type="radio" name="home" id="apartment" value="ap">
+            </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <label for="">Resumo do currículo<br>
+                <textarea name="description" id="desc" cols="30" rows="10" required maxlength="1000"></textarea>
+            </label>
+            <br>
+            <label for="office">Cargo
+                <input type="text" name="office" maxlength="40" required id="office">
+            </label>
+            <br>
+            <br>
+            <label for="desc-office">Descrição do Cargo
+                <input type="text" name="desc-office" maxlength="500" required id="desc-office">
+            </label>
+            <br>
+            <label for="date-office">Data de início
+                <input type="date" name="date-office" required id="date-office">
+            </label>
+        </fieldset>
+    </form>
 </body>
+
 </html>
