@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="" method="get">
+    <form action="" method="GET" id="forms">
         <fieldset>
             <label for="name">Nome
                 <input type="text" name="name" maxlength="40" required id="name">
@@ -31,8 +31,8 @@
                 <input type="text" name="city" maxlength="28" required id="city">
             </label>
             <br>
-            <label for="state">Estado
-                <select name="state" id="state" required></select>
+            <label for="">Estado
+                <select name="state" id="state"></select>
             </label>
             <br>
             <label for="house">Casa
@@ -58,10 +58,17 @@
             </label>
             <br>
             <label for="date-office">Data de início
-                <input type="date" name="date-office" required id="date-office">
+                <input type="text" name="date-office" required id="date-office">
             </label>
+            <br>
+            <button id="submit" type="submit">Enviar</button>
+            <button id="submit" type="reset">Limpar</button>
         </fieldset>
     </form>
+    <div >
+        <ul id="info"></ul>
+    </div>
 </body>
-    <script src="/exercises/BLOCO_6/dia_1/exercise/script.js"></script>
+<script src="/exercises/BLOCO_6/dia_1/exercise/script.js"></script>
+
 </html>
