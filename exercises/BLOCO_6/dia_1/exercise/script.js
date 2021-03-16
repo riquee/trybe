@@ -56,16 +56,22 @@ const checkDate = (event) => {
   ) {
     event.preventDefault();
   } else {
-    event.preventDefault();
-    const list = document.querySelectorAll("#forms")[0];
-    for (const key of list) {
-      if (key.value) {
-        const elem = document.createElement("li");
-        info.appendChild(elem);
-        elem.textContent = `${key.parentNode.textContent}: ${key.value}`
-      }
-    }
-
+    const url = location.search.slice(1).split("&");
+    url.forEach((index) => {
+      const keyValue = index.split("=");
+      const key = keyValue[0];
+      const value = keyValue[1].replace(/%2F/g,'/')
+      const li = document.createElement("li");
+      info.appendChild(li);
+      li.textContent = `${key}: ${value}`;
+    });
+    localStorage.info = info.outerHTML;
   }
 };
 forms.addEventListener("submit", checkDate);
+
+// REFERENCIAS: https://pt.stackoverflow.com/questions/65696/como-capturar-par%C3%A2metros-passados-pela-url-usando-javascript;
+
+window.onload = () => {
+  info.innerHTML = localStorage.info;
+}
