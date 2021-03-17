@@ -5,72 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise BLOCO-6.1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/exercises/BLOCO_6/dia_2/bootstrap/style.css">
 </head>
 
 <body>
-    <form action="" method="GET" id="forms">
-        <fieldset>
-            <label for="name">Nome
-                <input type="text" name="name" maxlength="40" required id="name">
-            </label>
-            <br>
-            <label for="email">Email
-                <input type="text" name="email" maxlength="50" required id="email">
-            </label>
-            <br>
-            <label for="cpf">CPF
-                <input type="text" name="cpf" maxlength="11" required id="cpf">
-            </label>
-            <br>
-            <label for="address">Endereço
-                <input type="text" name="address" maxlength="200" required id="address">
-            </label>
-            <br>
-            <label for="city">Cidade
-                <input type="text" name="city" maxlength="28" required id="city">
-            </label>
-            <br>
-            <label for="">Estado
-                <select name="state" id="state"></select>
-            </label>
-            <br>
-            <label for="house">Casa
-                <input type="radio" name="home" checked id="house" value="house">
-            </label>
-            <label for="apartment">Apartamento
-                <input type="radio" name="home" id="apartment" value="ap">
-            </label>
-            <br>
-        </fieldset>
-        <fieldset>
-            <label for="">Resumo do currículo<br>
-                <textarea name="description" id="desc" cols="30" rows="10" required maxlength="1000"></textarea>
-            </label>
-            <br>
-            <label for="office">Cargo
-                <input type="text" name="office" maxlength="40" required id="office">
-            </label>
-            <br>
-            <br>
-            <label for="desc-office">Descrição do Cargo
-                <input type="text" name="desc-office" maxlength="500" required id="desc-office">
-            </label>
-            <br>
-            <label for="date-office">Data de início
-                <input type="text" name="date-office" required id="date-office">
-            </label>
-            <br>
-            <button id="submit" type="submit">Enviar</button>
-            <button id="submit" type="reset">Limpar</button>
-        </fieldset>
+    <h3>
+        Cadastro
+        <small class="text-muted">#workshop</small>
+    </h3>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="nome@exemplo.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">CPF</label>
+            <input type="text" class="form-control" id="cpf" placeholder="Digite seu cpf">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Endereço</label>
+            <input type="text" class="form-control" id="andress" placeholder="Digite seu endereço">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword2">Cidade</label>
+            <input type="text" class="form-control" id="city" placeholder="Digite sua cidade">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword2">Cidade</label>
+            <select id="state" class="form-select form-select-sm" aria-label=".form-select-sm example">
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Moradia</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="home" id="house">
+                <label class="form-check-label" for="house" checked value="Casa">
+                    Casa
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="home" id="ap">
+                <label class="form-check-label" for="ap" checked value="Apartamento">
+                    Apartamento
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="desc" class="form-label">Resumo currículo</label>
+            <textarea class="form-control" id="desc" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword2">Cargo</label>
+            <input type="text" class="form-control" id="office" placeholder="Digite o cargo">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword2">Descrição do cargo</label>
+            <input type="text" class="form-control" id="desc-office" placeholder="Descrição do cargo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword2">Data inicio</label>
+            <input type="date" class="form-control" id="date-office" required>
+        </div>
     </form>
-    <div >
-        <ul id="info"></ul>
-    </div>
 </body>
-<script src="/exercises/BLOCO_6/dia_1/exercise/script.js"></script>
+<script src="/exercises/BLOCO_6/dia_2/bootstrap/script.js"></script>
 
 </html>
