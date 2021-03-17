@@ -1,6 +1,7 @@
 const inputState = document.querySelector("#state");
 const inputDate = document.querySelector("#date-office");
 const forms = document.querySelector("#forms");
+const list = document.querySelectorAll("#forms [name]");
 const submit = document.querySelector("#submit");
 const info = document.querySelector("#info");
 const states = {
@@ -42,3 +43,27 @@ const addState = () => {
   }
 };
 addState();
+
+const generator = (e) => {
+  e.preventDefault();
+  Object.keys(list).forEach((index) => {
+    const li = document.createElement("li");
+    if (list[index].name === "state") {
+      info.appendChild(li);
+      li.className = "list-group-item";
+      li.textContent = `Estado: ${list[index].value}`;
+    } else if (list[index].name === "home") {
+      if(list[index].checked) {
+        info.appendChild(li);
+        li.className = "list-group-item";
+        li.textContent = `Moradia: ${list[index].parentNode.textContent}`;
+      }
+    } else {
+      info.appendChild(li);
+      li.className = "list-group-item";
+      li.textContent = `${list[index].parentNode.textContent}: ${list[index].value}`
+    }
+  });
+};
+
+forms.addEventListener("submit", generator);
