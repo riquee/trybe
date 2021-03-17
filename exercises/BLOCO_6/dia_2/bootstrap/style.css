@@ -1,0 +1,18 @@
+body {
+    background-color: #3E5585;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-space {
+    margin: 15px 0;
+}
+
+#info {
+    margin: auto;
+    width: 70%;
+    margin-top: 53px;
+}

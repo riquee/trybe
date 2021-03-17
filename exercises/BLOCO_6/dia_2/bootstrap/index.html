@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/exercises/BLOCO_6/dia_2/bootstrap/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h3>
+                    Cadastro
+                    <small class="text-muted">#workshop</small>
+                </h3>
+
+          
+                <form id="forms" action="" method="get">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input name="password" type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">CPF</label>
+                        <input name="cpf" type="text" class="form-control" id="cpf" placeholder="Digite seu cpf">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Endereço</label>
+                        <input name="andress" type="text" class="form-control" id="andress" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Cidade</label>
+                        <input name="city" type="text" class="form-control" id="city" placeholder="Digite sua cidade">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Estado</label>
+                        <select name="state" id="state" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        </select>
+                    </div>
+
+                    <div class="form-group btn-space">
+                        <div class="form-check">
+                            <label class="form-check-label" for="house" checked value="Casa">
+                                Casa
+                            </label>
+                            <input name="home" class="form-check-input" type="radio" name="home" id="house" checked>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="ap" checked value="Apartamento">
+                                Apartamento
+                            </label>
+                            <input name="home" class="form-check-input" type="radio" name="home" id="ap">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 btn-space">
+                        <label for="desc" class="form-label">Resumo currículo</label>
+                        <textarea name="desc" class="form-control" id="desc" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Cargo</label>
+                        <input name="office" type="text" class="form-control" id="office" placeholder="Digite o cargo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Descrição do cargo</label>
+                        <input name="desc-office" type="text" class="form-control" id="desc-office" placeholder="Descrição do cargo"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Data inicio</label>
+                        <input name="date" type="date" class="form-control" id="date-office" required>
+                    </div>
+                    
+                    <div class="btn-space">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-primary" type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm">
+                <div>
+                    <h3>
+                        Dados
+                        <small class="text-muted">cadastrais</small>
+                    </h3>
+                    <ul id="info" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/exercises/BLOCO_6/dia_2/bootstrap/script.js"></script>
+
+</html>
