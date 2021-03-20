@@ -1,4 +1,4 @@
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
     
     
     body {
@@ -25,14 +25,37 @@
     }
 }
 
-body {
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: burlywood;
+    }
 
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .container {
+        display: flex;
+    }
 }
-h1 {
 
-}
-h2 {
+@media only screen and (min-width: 1300px) {
+    body {
+        max-width: 800px;
+        background-color: cadetblue;
+    }
 
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 75px;
+    }
 }
 
 img {
