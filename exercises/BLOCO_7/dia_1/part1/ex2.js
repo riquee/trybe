@@ -1,3 +1,11 @@
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+function contador (n){
+    if (n < 1){
+        return [];
+    } else {
+        let contadorArray = contador (n - 1);
+        contadorArray.push(n);
+        return contadorArray;
+    }
+}
 
-const teste = oddsAndEvens.sort((a, b) => a - b);
+console.log(contador(4))
