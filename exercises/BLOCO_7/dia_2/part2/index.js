@@ -67,11 +67,7 @@ const totalMatematica = (obj) => {
 
 // BONUS 2
 
-let newObj = {
-  professor: "Maria Clara",
-  aulas: "",
-  estudantes: 0,
-};
+let newObj = { professor: "Maria Clara", aulas: "", estudantes: 0 };
 
 Object.values(allLessons)
   .filter((index) => index.professor == "Maria Clara")
