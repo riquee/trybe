@@ -75,5 +75,3 @@ Object.values(allLessons)
     newObj.aulas += ` ${index.materia}`;
     newObj.estudantes += index.numeroEstudantes;
   });
-
-console.log(newObj);
