@@ -51,3 +51,33 @@ const valuePosition = (obj, position) =>
 
 const checkObj = (obj, key, value) =>
   Object.entries(obj).some(([key2, value2]) => key2 == key && value2 == value);
+lesson3, "materia", "Maria Clara";
+
+// BONUS 1
+
+const totalMatematica = (obj) => {
+  let total = 0;
+  Object.values(obj).forEach((i) => {
+    if (i.materia == "Matemática") {
+      total += i.numeroEstudantes;
+    }
+  });
+  return total;
+};
+
+// BONUS 2
+
+let newObj = {
+  professor: "Maria Clara",
+  aulas: "",
+  estudantes: 0,
+};
+
+Object.values(allLessons)
+  .filter((index) => index.professor == "Maria Clara")
+  .forEach((index) => {
+    newObj.aulas += ` ${index.materia}`;
+    newObj.estudantes += index.numeroEstudantes;
+  });
+
+console.log(newObj);
