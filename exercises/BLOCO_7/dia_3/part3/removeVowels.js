@@ -1,11 +1,8 @@
 const assert = require("assert");
 
 const removeVowels = (word) => {
-  const reg = /a|e|i|o/gi;
   let count = 0;
-  return word.replace(reg, (index) => {
-    return (count += 1), (index = count);
-  });
+  return word.replace(/a|e|i|o/gi, (index) => (count += 1), (index = count));
 };
 
 const parameter = "Dayane";
