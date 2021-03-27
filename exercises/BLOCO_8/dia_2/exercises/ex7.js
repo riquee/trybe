@@ -65,7 +65,12 @@ const books = [
 
 const expectedResult = false;
 
-const everyoneWasBornOnSecXX = () =>
-  books.every((e) => e.author.birthYear >= 1900 && e.author.birthYear < 2000);
+const authorUnique = () => {
+  const date = books
+    .map((e) => e.releaseYear)
+    .some((elem, index, array) => array.filter((e) => e === elem).length > 1);
 
-assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
+  return date;
+};
+
+assert.strictEqual(authorUnique(), expectedResult);
