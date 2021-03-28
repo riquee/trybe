@@ -63,12 +63,11 @@ const books = [
   },
 ];
 
-function allNames() {
-  return books.reduce((acc, curr, idx, arr) => {
-    if (idx === arr.length - 1) return `${acc} ${curr.author.name}.`;
-    return `${acc} ${curr.author.name},`;
-  }, "Nomes:");
-}
+const allNames = () =>
+  books.reduce((acc, curr, idx, arr) => {
+    if (idx === arr.length - 1) return acc + `${curr.author.name}.`;
+    return acc + `${curr.author.name}, `;
+  }, "Nomes: ");
 
 assert.deepStrictEqual(
   allNames(),

@@ -1,7 +1,11 @@
-const assert = require("assert");
+const assert = require('assert');
 
-const arrays = [["1", "2", "3"], [true], [4, 5, 6]];
+const arrays = [
+    ['1', '2', '3'],
+    [true],
+    [4, 5, 6],
+];
 
-const flatten = () => arrays.reduce((acc, curr) => acc.concat(curr));
+const flatten = () => arrays.reduce((acc, curr) => acc.concat(curr), [])
 
-assert.deepStrictEqual(flatten(), ["1", "2", "3", true, 4, 5, 6]);
+assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);
