@@ -1,9 +1,6 @@
-const assert = require('assert');
+const assert = require("assert");
 
-const sum = (a = 0, ...rest) => {
-    const arr = [a, ...rest]
-    return arr.reduce((acc, curr) => acc + curr);
-}
+const sum = (a = 0, ...rest) => [a, ...rest].reduce((acc, curr) => acc + curr);
 
 assert.strictEqual(sum(), 0);
 assert.strictEqual(sum(1), 1);
