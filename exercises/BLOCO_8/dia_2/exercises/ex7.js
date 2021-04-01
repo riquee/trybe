@@ -37,7 +37,7 @@ const books = [
     genre: "Ficção Científica",
     author: {
       name: "Frank Herbert",
-      birthYear: 1920,
+      birthYear: 19770,
     },
     releaseYear: 1965,
   },
@@ -66,11 +66,10 @@ const books = [
 const expectedResult = false;
 
 const authorUnique = () => {
-  const date = books
-    .map((e) => e.releaseYear)
-    .some((elem, index, array) => array.filter((e) => e === elem).length > 1);
-
-  return date;
+  return books.every(
+    ({ author: { birthYear } }) =>
+      books.filter(({ author }) => author.birthYear === birthYear).length === 1
+  );
 };
-
-assert.strictEqual(authorUnique(), expectedResult);
+console.log(authorUnique());
+// assert.strictEqual(authorUnique(), expectedResult);
