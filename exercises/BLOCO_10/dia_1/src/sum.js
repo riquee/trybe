@@ -1,9 +1,16 @@
-function sum(a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('parameters must be numbers');
-  }
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
 
-  return a + b;
-}
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
 
-module.exports = sum;
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+module.exports = {obj1, obj2, obj3};
